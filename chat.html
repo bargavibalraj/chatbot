@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ssss</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/chatbot.css" />
+</head>
+
+<body>
+  <img src="6.png" id="id01" class="open-button" onclick="openForm()" style="height:69px">
+  <div class="chat-popup animate" id="myForm">
+    <div class="panel panel-default ">
+      <div class="panel-heading" style="height: 111px;background-color:blue">
+        <img src="bot3.png" class="image" alt="Smiley face" /><b class="chat">ChatBot</b>
+        <span onclick="closeForm()" class="close animate-top " title="Close Modal">&times;</span>
+      </div>
+      <div class="panel-body  body">
+        <img src="bot2.png" class="image1"><b class="chat1">ChatBot</b>
+        <div>
+          <p>Want to see what I can do? 🤖</p>
+          <p>Hi​! I'm a Bot. Let me know if you have any questions regarding our tool!</p>
+          <p>write your question below.</p>
+        </div>
+        <b style="float: right;margin-right: 22px;margin-top: -15px;">you</b>
+        <div>
+          <p class="user">bbhjggfghdhdytrfghfhgh</p>
+        </div>
+      </div>
+      <div class="page-footer">
+        <input type="text" placeholder="Type the message here">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("id01").style.display = "none";
+    }
+    function closeForm() {
+      document.getElementById('myForm').style.display = 'none';
+      document.getElementById("id01").style.display = "block";
+    }
+
+  </script>
+</body>
+
+</html>
